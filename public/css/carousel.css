@@ -16,8 +16,13 @@
   font-size: 16pt;
 }
 
+.carousel .img-container {
+  width: 66.6667%;
+  float: left;
+}
+
 .carousel .display {
-  max-height: 430px;
+  max-height: 70vh;
   height: 41vw;
 }
 .carousel .display .big-img {
@@ -39,7 +44,7 @@
   cursor: pointer;
 }
 .carousel ul li .selected {
-  border: 3px solid #848484;
+  border: 3px solid #444444;
 }
 
 .carousel .inline-container {
@@ -74,7 +79,10 @@
 }
 
 .carousel .prev, .carousel .next {
-  padding-top: 200px;
+  width: 16.6667%;
+  min-width: 16.6667%;
+  float: left;
+  padding-top: 30vh;
 }
 .carousel .controls .prev, .carousel .controls .next {
   padding-top: 22%;

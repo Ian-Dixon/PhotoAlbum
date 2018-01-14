@@ -148,14 +148,14 @@ class Carousel {
 
     if (this.display == "block") {
       html = '<h1 class="title">' + this.title + '</h1>' +
-             '<div class="prev col-xs-2"><img src="images/icons/lArrow.png" onclick="' + this.self + '.prev()" /></div>' +
-             '<div class="col-xs-8" id="' + this.self + '-container" onclick="' + this.self + '.click()"></div>' +
-             '<div class="next col-xs-2"><img src="images/icons/rArrow.png" onclick="' + this.self + '.next()" /></div>';
+             '<div class="prev"><img src="images/icons/lArrow.png" onclick="' + this.self + '.prev()" /></div>' +
+             '<div class="img-container" id="' + this.self + '-container" onclick="' + this.self + '.click()"></div>' +
+             '<div class="next"><img src="images/icons/rArrow.png" onclick="' + this.self + '.next()" /></div>';
     } else if (this.display == "inline") {
       this.targetDiv.setAttribute("onclick", this.self + ".click()");
       html = '<div class="controls"><h1 class="title">' + this.title + '</h1>' +
-             '<div class="prev col-xs-2"><img src="images/icons/lArrow.png" onclick="' + this.self + '.prev()" /></div>' +
-             '<div class="next col-xs-2 col-xs-offset-8"><img src="images/icons/rArrow.png" onclick="' + this.self + '.next()" /></div></div>' +
+             '<div class="prev"><img src="images/icons/lArrow.png" onclick="' + this.self + '.prev()" /></div>' +
+             '<div class="next col-xs-offset-8"><img src="images/icons/rArrow.png" onclick="' + this.self + '.next()" /></div></div>' +
              '<div class="inline-container" id="' + this.self + '-container"></div>';
     }
 
