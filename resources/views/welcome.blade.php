@@ -25,10 +25,10 @@
   <script>
     var downtownImg = [{
       img: "{{ url('images/albums/downtown/oslofjordSunset.jpg') }}",
-      caption: "Oslofjord"
+      caption: "&nbsp;" //"Oslofjord"
     }, {
       img: "{{ url('images/albums/downtown/oslofjord.jpg') }}",
-      caption: "Oslofjord"
+      caption: "&nbsp;" //"Oslofjord"
     }];
 
     var dormImg = [{
@@ -58,7 +58,7 @@
     }];
 
     var downtownCarousel = new Carousel('downtownCarousel', 'downtown', downtownImg, {
-      title: "Downtown Oslo"
+      title: "Oslofjord" //"Downtown Oslo"
     });
 
     var dormCarousel = new Carousel('dormCarousel', 'dorm', dormImg, {
