@@ -47,7 +47,7 @@
 
     var sognsvannImg = [{
       img: "{{ url('images/albums/sognsvann/1.jpg') }}",
-      caption: "5 minute walk from Kringsjå"
+      caption: "10 minute walk from Kringsjå"
     }, {
       img: "{{ url('images/albums/sognsvann/2.jpg') }}"
     }, {
