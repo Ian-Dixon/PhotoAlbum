@@ -7,7 +7,7 @@
 @section ('content')
   <div class="content">
     <div class="album">
-      <div class="carousel" id="downtown"></div>
+      <div class="carousel" id="oslo"></div>
     </div>
 
     <div class="album">
@@ -23,12 +23,21 @@
 @section ('scripts')
   <script src="{{ url('js/carousel.js') }}" type="text/javascript"></script>
   <script>
-    var downtownImg = [{
-      img: "{{ url('images/albums/downtown/oslofjordSunset.jpg') }}",
-      caption: "&nbsp;" //"Oslofjord"
+    var osloImg = [{
+      img: "{{ url('images/albums/oslo/oslofjordSunset.jpg') }}",
+      caption: "Oslofjord"
     }, {
-      img: "{{ url('images/albums/downtown/oslofjord.jpg') }}",
-      caption: "&nbsp;" //"Oslofjord"
+      img: "{{ url('images/albums/oslo/oslofjord.jpg') }}",
+      caption: "Oslofjord"
+    }, {
+      img: "{{ url('images/albums/oslo/fromOperahouse2.jpg') }}",
+      caption: "View from the roof of the operahouse"
+    }, {
+      img: "{{ url('images/albums/oslo/fromOperahouse3.jpg') }}",
+      caption: "View from the roof of the operahouse"
+    }, {
+      img: "{{ url('images/albums/oslo/vigelandsparken.jpg') }}",
+      caption: "Vigelandsparken"
     }];
 
     var dormImg = [{
@@ -57,8 +66,8 @@
       img: "{{ url('images/albums/sognsvann/4.jpg') }}"
     }];
 
-    var downtownCarousel = new Carousel('downtownCarousel', 'downtown', downtownImg, {
-      title: "Oslofjord" //"Downtown Oslo"
+    var osloCarousel = new Carousel('osloCarousel', 'oslo', osloImg, {
+      title: "Oslo"
     });
 
     var dormCarousel = new Carousel('dormCarousel', 'dorm', dormImg, {
