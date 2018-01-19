@@ -30,14 +30,17 @@
       img: "{{ url('images/albums/oslo/oslofjord.jpg') }}",
       caption: "Oslofjord"
     }, {
+      img: "{{ url('images/albums/oslo/detKongeligeSlottet.jpg') }}",
+      caption: "That's where the king lives."
+    }, {
+      img: "{{ url('images/albums/oslo/stortinget.jpg') }}",
+      caption: "Parliament"
+    }, {
       img: "{{ url('images/albums/oslo/fromOperahouse2.jpg') }}",
-      caption: "View from the roof of the operahouse"
+      caption: "From the roof of the operahouse"
     }, {
       img: "{{ url('images/albums/oslo/fromOperahouse3.jpg') }}",
-      caption: "View from the roof of the operahouse"
-    }, {
-      img: "{{ url('images/albums/oslo/vigelandsparken.jpg') }}",
-      caption: "Vigelandsparken"
+      caption: "From the roof of the operahouse"
     }];
 
     var dormImg = [{
