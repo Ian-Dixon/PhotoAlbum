@@ -42,9 +42,6 @@
       img: "{{ url('images/albums/oslo/fromCastle2.jpg') }}",
       caption: "From Akershus Castle"
     }, {
-      img: "{{ url('images/albums/oslo/fromCastle3.jpg') }}",
-      caption: "From Akershus Castle"
-    }, {
       img: "{{ url('images/albums/oslo/fromCastle4.jpg') }}",
       caption: "From Akershus Castle"
     }, {
