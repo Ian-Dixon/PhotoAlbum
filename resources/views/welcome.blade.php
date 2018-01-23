@@ -30,11 +30,23 @@
       img: "{{ url('images/albums/oslo/oslofjord.jpg') }}",
       caption: "Oslofjord"
     }, {
-      img: "{{ url('images/albums/oslo/detKongeligeSlottet.jpg') }}",
+      img: "{{ url('images/albums/oslo/detKongeligeSlott.jpg') }}",
       caption: "That's where the king lives."
     }, {
       img: "{{ url('images/albums/oslo/stortinget.jpg') }}",
       caption: "Parliament"
+    }, {
+      img: "{{ url('images/albums/oslo/fromCastle1.jpg') }}",
+      caption: "From Akershus Castle. The big brown thing is city hall."
+    }, {
+      img: "{{ url('images/albums/oslo/fromCastle2.jpg') }}",
+      caption: "From Akershus Castle"
+    }, {
+      img: "{{ url('images/albums/oslo/fromCastle3.jpg') }}",
+      caption: "From Akershus Castle"
+    }, {
+      img: "{{ url('images/albums/oslo/fromCastle4.jpg') }}",
+      caption: "From Akershus Castle"
     }, {
       img: "{{ url('images/albums/oslo/fromOperahouse2.jpg') }}",
       caption: "From the roof of the operahouse"
