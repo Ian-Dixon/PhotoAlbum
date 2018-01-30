@@ -76,6 +76,9 @@
       caption: "Yep. I went outside."
     }, {
       img: "{{ url('images/albums/sognsvann/4.jpg') }}"
+    }, {
+      img: "{{ url('images/albums/sognsvann/atNight.jpg') }}",
+      caption: '<img src="{{ url("images/icons/spongebob.jpg") }}" height="25px" /> at night'
     }];
 
     var osloCarousel = new Carousel('osloCarousel', 'oslo', osloImg, {
