@@ -11,9 +11,13 @@
 |
 */
 
-Route::get('/', 'Controller@welcome');
-Route::get('home', 'Controller@welcome');
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//gallery
+Route::get('/', 'Controller@home');
+Route::get('home', 'Controller@home');
+Route::get('latest', 'Controller@latest');
+
+//upload
+Route::get('upload', 'Controller@upload')->middleware('auth');
+Route::post('upload', 'PhotoController@upload')->middleware('auth');

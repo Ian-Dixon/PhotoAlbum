@@ -14,9 +14,17 @@ class Albums extends Migration
     public function up()
     {
         Schema::create('albums', function(Blueprint $table) {
+          $table->engine = 'InnoDB';
+
           $table->increments('albumKey');
-          $table->string('title');
-          $table->integer('createdByUserKey');
+          $table->string('title')->default('&nbsp;');
+          $table->integer('createdByUserKey')->unsigned();
+          $table->timestamps();
+        });
+
+        //add foreign key constraints
+        Schema::table('albums', function(Blueprint $table) {
+          $table->foreign('createdByUserKey')->references('userKey')->on('users');
         });
     }
 

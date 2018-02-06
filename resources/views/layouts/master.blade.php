@@ -13,7 +13,19 @@
 </head>
 
 <body>
-@yield ('content')
+  <div class="header">
+    <div class="logo">
+      <a href="{{ url('/') }}"><img src="favicon.png" height="32px" /></a>
+    </div>
+    <ul class="nav-links">
+      <li class="nav-link"><a href="{{ url('/latest') }}">Latest</a></li>
+      <li class="nav-link"><a href="{{ url('/') }}">All</a></li>
+      @yield ('nav_links')
+    </ul>
+  </div>
+  <div class="content">
+    @yield ('content')
+  </div>
 
   <script src="{{ url('js/jquery.min.js') }}" type="text/javascript"></script>
   <script src="{{ url('js/bootstrap.min.js') }}" type="text/javascript"></script>
