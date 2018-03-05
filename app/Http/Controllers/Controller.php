@@ -15,7 +15,9 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public function home() {
-      $albums = Album::orderBy('displayOrder', 'desc')->get();
+      $albums = Album::orderBy('displayOrder', 'desc')
+        ->orderBy('albumKey', 'desc')
+        ->get();
 
       return view('gallery', [
         'albums' => $albums
