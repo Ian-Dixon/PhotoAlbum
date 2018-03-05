@@ -18,6 +18,7 @@ class Albums extends Migration
 
           $table->increments('albumKey');
           $table->string('title')->default('&nbsp;');
+          $table->integer('displayOrder')->default(0);
           $table->integer('createdByUserKey')->unsigned();
           $table->timestamps();
         });
