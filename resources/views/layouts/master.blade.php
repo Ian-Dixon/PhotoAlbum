@@ -18,8 +18,8 @@
       <a href="{{ url('/') }}"><img src="favicon.png" height="32px" /></a>
     </div>
     <ul class="nav-links">
-      <li class="nav-link"><a href="{{ url('/latest') }}">Latest</a></li>
       <li class="nav-link"><a href="{{ url('/') }}">All Pictures</a></li>
+      <li class="nav-link"><a href="{{ url('/latest') }}">Latest</a></li>
       @yield ('nav_links')
     </ul>
   </div>
