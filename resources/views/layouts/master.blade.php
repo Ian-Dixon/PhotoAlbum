@@ -19,7 +19,7 @@
     </div>
     <ul class="nav-links">
       <li class="nav-link"><a href="{{ url('/latest') }}">Latest</a></li>
-      <li class="nav-link"><a href="{{ url('/') }}">All</a></li>
+      <li class="nav-link"><a href="{{ url('/') }}">All Pictures</a></li>
       @yield ('nav_links')
     </ul>
   </div>
